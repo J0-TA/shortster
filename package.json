@@ -1,0 +1,48 @@
+{
+  "name": "shortster",
+  "version": "1.0.0",
+  "description": "URL shortening service (Coding challenge from MovingWorlds)",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "dev": "nodemon index.js --exec babel-node",
+    "test": "mocha ./{,!(node_modules)/**/}*.test.js --timeout 10000 --require @babel/register",
+    "lint": "eslint . --fix --ignore-path .eslintignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chidieberejoel/shortster.git"
+  },
+  "author": "Chidiebere Joel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chidieberejoel/shortster"
+  },
+  "homepage": "https://github.com/chidieberejoel/shortster#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/register": "^7.12.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "@hapi/joi": "^17.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "mongoose": "^5.11.5",
+    "nanoid": "^3.1.20",
+    "winston": "^3.3.3"
+  }
+}
